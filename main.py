@@ -20,7 +20,7 @@ MAX_CHARS = 60
 def words(text):
     """The words the judge will count, punctuation and dashes aside."""
     cleaned = text
-    for mark in ",.;:!?\"'\u2014\u2013-":
+    for mark in ",.;:!?\"'\u2019\u2018\u2014\u2013-":
         cleaned = cleaned.replace(mark, " ")
     return [piece for piece in cleaned.split() if piece]
 
